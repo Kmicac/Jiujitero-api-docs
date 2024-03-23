@@ -1,36 +1,49 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Jiu Jitero API Place
+description: A Jiu Jitsu Api where you can find and use the acttual information from athletes and academys.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Your API for your documentation, information or events website prototype!
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/jiujitsu-landing.jpg
   actions:
-    - text: Example Guide
+    - text: View Docs
       link: /guides/example/
       icon: right-arrow
       variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## Features
+
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="All CRUD Operations" icon="pencil">
+		Leverage our API to seamlessly perform all CRUD (Create, Read, Update, and Delete) operations without any limitations.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Pagination" icon="document">
+		Supports pagination through the 'limit' and 'offset' methods, allowing for features like infinite scroll.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Auth with JWT" icon="setting">
+		Utilize JWT for access and refresh tokens, and securely test endpoints with this authentication method.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Filters" icon="magnifier">
+		Filter products by price, title, and category, enabling the creation of sophisticated UIs based on these criteria.
+	</Card>
+  <Card title="Rest API" icon="star">
+		The API employs the REST API architecture, the most widely adopted structure in the industry.
+	</Card>
+  <Card title="GraphQL" icon="rocket">
+		The API supports GraphQL, a query language for APIs, and offers a runtime to execute those queries using your existing data.
+	</Card>
+  <Card title="Files" icon="add-document">
+		You can upload files using `multipart/form-data`.
+	</Card>
+  <Card title="Postam and Insomia" icon="random">
+		We provide files for both Postman and Insomnia, allowing you to easily test each endpoint.
+	</Card>
+  <Card title="AI Images" icon="sun">
+		Images are crafted using AI to ensure your projects looks so professionalism.
 	</Card>
 </CardGrid>
