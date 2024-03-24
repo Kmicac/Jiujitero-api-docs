@@ -13,37 +13,37 @@ export default defineConfig({
 				{
 					label: 'About',
 					items: [
-						{ label: 'Introduction', link: '/guides/introduction.md/' },
+						{ label: 'Introduction', link: 'en/about/introduction/' },
 					],
 				},
 				{
 					label: 'Rest API',
 					autogenerate: { directory: 'reference' },
 					items: [
-						{ label: 'Academys', link: ''},
-						{ label: 'Athletes', link: ''},
-						{ label: 'Filter athletes', link: ''},
-						{ label: 'Users', link: ''},
-						{ label: 'Auth JWT', link: ''},
-						{ label: 'Swagger Docs', link: ''}
+						{ label: 'Academys', link: 'en/rest/academy' },
+						{ label: 'Athletes', link: '' },
+						{ label: 'Filter athletes', link: '' },
+						{ label: 'Users', link: '' },
+						{ label: 'Auth JWT', link: '' },
+						{ label: 'Swagger Docs', link: '' }
 					],
 				},
 				{
 					label: 'GraphQL',
 					items: [
-						{ label: 'Academys', link: ''},
-						{ label: 'Athletes', link: ''},
-						{ label: 'Filter athletes', link: ''},
-						{ label: 'Users', link: ''},
-						{ label: 'Auth JWT', link: ''},
-						{ label: 'Playground', link: ''}
+						{ label: 'Academys', link: '' },
+						{ label: 'Athletes', link: '' },
+						{ label: 'Filter athletes', link: '' },
+						{ label: 'Users', link: '' },
+						{ label: 'Auth JWT', link: '' },
+						{ label: 'Playground', link: '' }
 					],
 
 				},
 				{
 					label: 'Resources',
 					items: [
-						{label: 'Insomnia', link: ''},
+						{ label: 'Insomnia', link: '' },
 					],
 				},
 			],
@@ -51,7 +51,7 @@ export default defineConfig({
 				"@fontsource/ibm-plex-serif/400.css",
 				"@fontsource/ibm-plex-serif/600.css",
 				"./src/styles/custom.css",
-			  ],
+			],
 		}),
 	],
 });
