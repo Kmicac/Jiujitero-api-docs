@@ -17,13 +17,13 @@ Response:
 
 ```json
 [
-    {
-        "_id": "65fa95f40e9d93d0fb93243d",
-        "name": "10th planet jiu-jitsu",
-        "location": "Los Angeles, California",
-        "professor": "Eddie Bravo",
-        "phone": 080055512345
-    },
+  {
+     "_id": "65fa95f40e9d93d0fb93243d",
+     "name": "10th planet jiu-jitsu",
+     "location": "Los Angeles, California",
+     "professor": "Eddie Bravo",
+     "phone": 080055512345
+  },
 // ...
 ]
 ```
@@ -65,7 +65,8 @@ Request:
 	"name": "New Academy",
 	"location": "Place where academy is located",
 	"professor": "Professor name",
-	"phone": 1234000555
+	"phone": 1234000555,
+    "image": "https://www.jjimageexample.com.jpeg"
 }
 ```
 
@@ -77,11 +78,12 @@ Response:
     "name": "New Academy",
     "location": "Place where academy is located",
     "professor": "Professor name",
-    "phone": 1234000555
+    "phone": 1234000555,
+    "image": "https://www.jjimageexample.com.jpeg"
 }
 ```
 
-> Note that the image is an URLs.
+> Note that the image is an URLs that must be ending in a valid image extencion. 
 
 ## Update a academy
 

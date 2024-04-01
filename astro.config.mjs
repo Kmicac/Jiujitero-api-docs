@@ -5,7 +5,10 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Jiu Jitero Api Place',
+			title: 'Jiu Jitero Api',
+			logo: {
+				src: "./src/assets/logo.png",
+			  },
 			social: {
 				github: 'https://github.com/Kmicac/Jiujitero-Api',
 			},
@@ -21,10 +24,10 @@ export default defineConfig({
 					autogenerate: { directory: 'reference' },
 					items: [
 						{ label: 'Academys', link: 'en/rest/academy' },
-						{ label: 'Athletes', link: '' },
-						{ label: 'Filter athletes', link: '' },
-						{ label: 'Users', link: '' },
-						{ label: 'Auth JWT', link: '' },
+						{ label: 'Athletes', link: 'en/rest/athlete' },
+						{ label: 'Filter athletes', link: 'en/rest/filterathlete' },
+						{ label: 'Users', link: 'en/rest/user' },
+						{ label: 'Auth JWT', link: 'en/rest/auth' },
 						{ label: 'Swagger Docs', link: '' }
 					],
 				},
