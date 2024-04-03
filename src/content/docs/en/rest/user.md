@@ -87,7 +87,7 @@ Response:
 }
 ```
 
-> Note that the password is encrypted, you can also feel free to add to the creation body an attribute `phone`.
+> Note that the password is encrypted, you can also feel free to add the attribute `phone` to the creation body.
 
 ## Update a user
 
@@ -137,7 +137,7 @@ Response:
 "User with id 660927bed93ba9ab054cafb7 has been deleted"
 ```
 
-> Note that you have to be an authorized user with the admin role to be able to delete a user.
+> **Note that you have to be an authorized user with the admin role to be able to delete a user.**
 
 ## Check the email
 

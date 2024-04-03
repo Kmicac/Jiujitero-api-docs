@@ -21,32 +21,31 @@ export default defineConfig({
 				},
 				{
 					label: 'Rest API',
-					autogenerate: { directory: 'reference' },
 					items: [
 						{ label: 'Academys', link: 'en/rest/academy' },
 						{ label: 'Athletes', link: 'en/rest/athlete' },
 						{ label: 'Filter athletes', link: 'en/rest/filterathlete' },
 						{ label: 'Users', link: 'en/rest/user' },
 						{ label: 'Auth JWT', link: 'en/rest/auth' },
-						{ label: 'Swagger Docs', link: '' }
+						{ label: 'Swagger Docs', link: 'en/rest/swagger' }
 					],
 				},
 				{
 					label: 'GraphQL',
 					items: [
-						{ label: 'Academys', link: '' },
-						{ label: 'Athletes', link: '' },
-						{ label: 'Filter athletes', link: '' },
-						{ label: 'Users', link: '' },
-						{ label: 'Auth JWT', link: '' },
-						{ label: 'Playground', link: '' }
+						{ label: 'Academys', link: 'en/gralphql/academy' },
+						{ label: 'Athletes', link: 'en/gralphql/athlete' },
+						{ label: 'Filter athletes', link: 'en/gralphql/filter' },
+						{ label: 'Users', link: 'en/gralphql/users' },
+						{ label: 'Auth JWT', link: 'en/gralphql/auth' },
+						{ label: 'Playground', link: 'en/gralphql/playground' }
 					],
 
 				},
 				{
 					label: 'Resources',
 					items: [
-						{ label: 'Insomnia', link: '' },
+						{ label: 'Insomnia', link: 'en/about/resourse/insomnia' },
 					],
 				},
 			],

@@ -11,8 +11,9 @@ This API includes features like:
 - ✅ **REST API**
 - ✅ **Pagination**
 - ✅ **Auth with JWT**
+- ✅ **Swagger Documentation**
 - ✅ **Filter Athletes by Academies, name and location**
 - ✅ **Create users and check to see if they already exist**
 - ✅ **Insomnia files**
-- ✅ **GraphQL**       `>> Working on it, coming soon...`
 - ✅ **Upload Files**  `>> Working on it, coming soon...`
+- ✅ **GraphQL**       `>> Working on it, coming soon...`
