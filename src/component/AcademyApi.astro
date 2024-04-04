@@ -1,0 +1,17 @@
+---
+import type { Academy } from "../models";
+const API = 'http://localhost:3000/api/v1/academys?limit=5';
+const response = await fetch(API);
+const data = await response.json() as Academy[];
+---
+
+<div class='grid grid-5 not-content'>
+	{data.map((item) => (
+    <article>
+      <img loading="lazy"src={item.image} alt={item.name} />
+      <h3>{item.name}</h3>
+      <p>{item.location}</p>
+    </article>
+  ))}
+  
+</div>

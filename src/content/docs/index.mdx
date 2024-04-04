@@ -13,7 +13,37 @@ hero:
       variant: primary
 ---
 
+import { Code } from 'astro/components';
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import AcademyApi from '../../component/AcademyApi.astro';
+import AthleteApi from '../../component/AthleteApi.astro';
+import UsersApi from '../../component/UsersApi.astro';
+
+<section class="section">
+  <h3>Get academies</h3>
+  <Code code="[GET] http://localhost:3000/api/v1/academys?limit=5" lang="sh" />
+  <AcademyApi />
+</section>
+
+<section class="section">
+  <div class="title">
+    <h3>Get athletes</h3>
+    <Code code="[GET] http://localhost:3000/api/v1/athletes?team=Alliance" lang="sh" />
+  </div>
+  <div class="APIContainer">
+    <AthleteApi />
+  </div>
+</section>
+
+<section class="section">
+  <div class="title">
+    <h3>Get users</h3>
+    <Code code="[GET] http://localhost:3000/api/v1/users" lang="sh" />
+  </div>
+  <div class="APIContainer">
+    <UsersApi  />
+  </div>
+</section>
 
 ## Features
 
