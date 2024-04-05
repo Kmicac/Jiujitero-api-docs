@@ -11,6 +11,9 @@
   .grid a img {
       max-width: 100%;
   }
+  /* .h4 {
+    color: brown;
+  } */
   
   @media screen and (min-width: 768px) {
       .grid {
@@ -26,5 +29,9 @@
       .grid a,
       .grid article {
           margin: 0;
+      }
+      .grid a,
+      .grid h4 {
+        color: brown;
       }
   }

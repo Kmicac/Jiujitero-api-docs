@@ -10,7 +10,7 @@ const data = (await response.json()) as User[];
     data.map((item) => (
       <article>
         <img loading="lazy" src={item.image} alt={item.name} />
-        <h4>{item.name}</h4>
+        <h3>{item.name}</h3>
         <p>{item.email}</p>
       </article>
     ))

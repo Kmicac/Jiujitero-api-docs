@@ -5,11 +5,11 @@ const response = await fetch(API);
 const data = await response.json() as Athlete[];
 ---
 
-<div class='grid grid-5 not-content'>
+<div class='grid grid-5 grid-h4 not-content'>
 	{data.map((item) => (
     <article>
-      <h4>{item.name}</h4>
-      <h4>{item.lastName}</h4>
+      <h3>{item.name}</h3>
+      <h3>{item.lastName}</h3>
       <h4>{item.team}</h4>
       <p>{item.email}</p>
     </article>
