@@ -1,6 +1,6 @@
 ---
 import type { Athlete } from "../models";
-const API = 'http://localhost:3000/api/v1/athletes?team=Alliance';
+const API = 'https://jiujitero-api.onrender.com/api/v1/athletes?team=Alliance';
 const response = await fetch(API);
 const data = await response.json() as Athlete[];
 ---
