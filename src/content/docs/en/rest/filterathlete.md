@@ -11,7 +11,7 @@ By using the `/athletes` endpoint and passing `name` as a query parameter, you c
 Request:
 
 ```sh
-[GET] http://localhost:3000/api/v1/athletes/search?name=Alexander  or  /athletes?name=Alexander
+[GET] https://jiujitero-api.onrender.com/api/v1/athletes/search?name=Alexander  or  /athletes?name=Alexander
 ```
 
 ## Filter by last name
@@ -21,7 +21,7 @@ By using the `/athletes` endpoint and passing `lastName` as a query parameter, y
 Request:
 
 ```sh
-[GET] http://localhost:3000/api/v1/athletes?lastName=Machado
+[GET] https://jiujitero-api.onrender.com/api/v1/athletes?lastName=Machado
 ```
 
 ## Filter by team 
@@ -31,7 +31,7 @@ By using the `/athletes` endpoint and passing `team` as a query parameter, you c
 Request:
 
 ```sh
-[GET] http://localhost:3000/api/v1/athletes?team=Alliance
+[GET] https://jiujitero-api.onrender.com/api/v1/athletes?team=Alliance
 ```
 
 ## Filter by email
@@ -41,7 +41,7 @@ By using the `/athletes` endpoint and passing `email` as a query parameter, you 
 Request:
 
 ```sh
-[GET] http://localhost:3000/api/v1/athletes?email=a%40example.com
+[GET] https://jiujitero-api.onrender.com/api/v1/athletes?email=a%40example.com
 ```
 
 ## Join filters
@@ -53,7 +53,7 @@ You can filter athletes using all query parameters and merge them all.
 
 ```sh
 [GET]
-http://localhost:3000/api/v1/athletes?name=ale&team=Alliance
+https://jiujitero-api.onrender.com/api/v1/athletes?name=ale&team=Alliance
 ```
 
 
@@ -61,7 +61,7 @@ http://localhost:3000/api/v1/athletes?name=ale&team=Alliance
 
 ```sh
 [GET]
-http://localhost:3000/api/v1/athletes/pagination?limit=5&offset=5&lastName=Gracie&team=Gracie
+https://jiujitero-api.onrender.com/api/v1/athletes/pagination?limit=5&offset=5&lastName=Gracie&team=Gracie
 ```
 
 
@@ -69,7 +69,7 @@ http://localhost:3000/api/v1/athletes/pagination?limit=5&offset=5&lastName=Graci
 
 ```sh
 [GET]
-http://localhost:3000/api/v1/athletes/pagination?limit=10&offset=10&team=Alliance
+https://jiujitero-api.onrender.com/api/v1/athletes/pagination?limit=10&offset=10&team=Alliance
 ```
 
 

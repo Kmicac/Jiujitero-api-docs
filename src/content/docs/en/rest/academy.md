@@ -10,7 +10,7 @@ You can access the list of 10 Academy by using the `/academys` endpoint.
 Request:
 
 ```
-[GET] http://localhost:1234/api/v1/academys
+[GET] https://jiujitero-api.onrender.com/api/v1/academys
 ```
 
 Response:
@@ -36,7 +36,7 @@ You can get a single academy by adding the `id` as a parameter: `/academys/{id}`
 Request:
 
 ```sh
-[GET] http://localhost:1234/api/v1/academys/65fa95f40e9d93d0fb93243d
+[GET] https://jiujitero-api.onrender.com/api/v1/academys/65fa95f40e9d93d0fb93243d
 ```
 
 Response:
@@ -59,7 +59,7 @@ You can create a new academy by sending an object like the following to `/academ
 Request:
 
 ```sh
-[POST] http://localhost:1234/api/v1/academys/
+[POST] https://jiujitero-api.onrender.com/api/v1/academys/
 # Body
 {
 	"name": "New Academy",
@@ -93,7 +93,7 @@ You can update an existing academy by sending an object like the following and a
 Request:
 
 ```sh
-[PATCH] http://localhost:1234/api/v1/academys/87fa95f40e9d93d0fb55466c
+[PATCH] https://jiujitero-api.onrender.com/api/v1/academys/87fa95f40e9d93d0fb55466c
 # Body
 {
   "name": "Change title"
@@ -123,7 +123,7 @@ You can delete an existing academy by adding the `id` as a parameter: `/academia
 Request:
 
 ```sh
-[DELETE] http://localhost:1234/api/v1/academys/87fa95f40e9d93d0fb55466c
+[DELETE] https://jiujitero-api.onrender.com/api/v1/academys/87fa95f40e9d93d0fb55466c
 ```
 
 Response:
@@ -141,7 +141,7 @@ You can get all athletes by Academy adding the `academyID` as a parameter to `/a
 Request:
 
 ```
-[GET] http://localhost:1234/api/v1/academys/65fa95f40e9d93d0fb932435/athletes
+[GET] https://jiujitero-api.onrender.com/api/v1/academys/65fa95f40e9d93d0fb932435/athletes
 ```
 
 Response:

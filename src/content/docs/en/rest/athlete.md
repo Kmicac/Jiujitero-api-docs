@@ -10,7 +10,7 @@ description: Endpoints for managing athletes
 Request:
 
 ```sh
-[POST] http://localhost:1234/api/v1/athletes/
+[POST] https://jiujitero-api.onrender.com/api/v1/athletes/
 #Body
 
 {
@@ -38,7 +38,7 @@ Response:
 Request:
 
 ```sh
-[GET] http://localhost:1234/api/v1/athletes/search?name=john
+[GET] https://jiujitero-api.onrender.com/api/v1/athletes/search?name=john
 ```
 Response:
 
@@ -61,7 +61,7 @@ Response:
 Request:
 
 ```sh
-[GET] http://localhost:1234/api/v1/athletes
+[GET] https://jiujitero-api.onrender.com/api/v1/athletes
 ```
 Response:
 
@@ -84,7 +84,7 @@ Response:
 Request:
 
 ```sh
-[PATCH] http://localhost:1234/api/v1/athletes/609c72c03a51cf0015f129e7
+[PATCH] https://jiujitero-api.onrender.com/api/v1/athletes/609c72c03a51cf0015f129e7
 
 # Body
 
@@ -113,7 +113,7 @@ Response:
 Request:
 
 ```sh
-[DELETE] http://localhost:1234/api/v1/athletes/609c72c03a51cf0015f129e7
+[DELETE] https://jiujitero-api.onrender.com/api/v1/athletes/609c72c03a51cf0015f129e7
 ```
 Response:
 
@@ -133,7 +133,7 @@ To fetch the first page of entries in a collection, the API needs to be called w
 Request:
 
 ```sh
-[GET] http://localhost:1234/api/v1/athletes/pagination?offset=0&limit=10
+[GET] https://jiujitero-api.onrender.com/api/v1/athletes/pagination?offset=0&limit=10
 ```
 Response:
 
@@ -161,9 +161,9 @@ To get the **next page** of entries, use an offset parameter equal to the sum of
 For example, for a pagination with 10 items per page, it looks like this:
 
 <!-- ```bash
-[GET] http://localhost:1234/api/v1/athletes/pagination?offset=0&limit=10
-[GET] http://localhost:1234/api/v1/athletes/pagination?offset=10&limit=10
-[GET] http://localhost:1234/api/v1/athletes/pagination?offset=20&limit=10
+[GET] https://jiujitero-api.onrender.com/api/v1/athletes/pagination?offset=0&limit=10
+[GET] https://jiujitero-api.onrender.com/api/v1/athletes/pagination?offset=10&limit=10
+[GET] https://jiujitero-api.onrender.com/api/v1/athletes/pagination?offset=20&limit=10
 ``` -->
 
 |   Request                                   | Description                   |

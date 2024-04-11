@@ -10,7 +10,7 @@ You can access the list of 3 users by using the `/users` endpoint.
 Request:
 
 ```sh
-[GET] http://localhost:3000/api/v1//users
+[GET] https://jiujitero-api.onrender.com/api/v1/users
 ```
 
 Response:
@@ -38,7 +38,7 @@ You can get a single user by adding the `id` as a parameter: `/users/{id}`
 Request:
 
 ```sh
-[GET] http://localhost:3000/api/v1/users/66091da036dfc4ae824f5212
+[GET] https://jiujitero-api.onrender.com/api/v1/users/66091da036dfc4ae824f5212
 ```
 
 Response:
@@ -63,7 +63,7 @@ You can create a new user by sending an object like the following to `/users/`
 Request:
 
 ```sh
-[POST] http://localhost:3000/api/v1/users/
+[POST] https://jiujitero-api.onrender.com/api/v1/users/
 # Body
 {
   "name": "Aurelio Martinez",
@@ -96,7 +96,7 @@ You can update a user exists by sending an object like the following and adding 
 Request:
 
 ```sh
-[PATCH] http://localhost:3000/api/v1/users/660927bed93ba9ab054cafb7
+[PATCH] https://jiujitero-api.onrender.com/api/v1/users/660927bed93ba9ab054cafb7
 # Body
 
 {
@@ -146,7 +146,7 @@ You can verify if an email is already registered in the API.
 Request:
 
 ```sh
-[POST] http://localhost:3000/api/v1/users/is-available
+[POST] https://jiujitero-api.onrender.com/api/v1/users/is-available
 # Body
 {
   "email": "john@mail.com"

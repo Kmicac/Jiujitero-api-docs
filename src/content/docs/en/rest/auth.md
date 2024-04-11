@@ -10,7 +10,7 @@ You can do login by sending an object like the following to `/auth/login/`
 Request:
 
 ```sh
-[POST] http://localhost:3000/api/v1/auth/login
+[POST] https://jiujitero-api.onrender.com/api/v1/auth/login
 # Body
 
 {
@@ -38,7 +38,7 @@ You can get the profile the current user with session if in the headers include 
 Request:
 
 ```sh
-[GET] http://localhost:3000/api/v1/auth/private
+[GET] https://jiujitero-api.onrender.com/api/v1/auth/private
 # Headers
 
 {
@@ -69,7 +69,7 @@ Response:
 Request:
 
 ```sh
-[POST] http://localhost:3000/api/v1/auth/check-status
+[POST] https://jiujitero-api.onrender.com/api/v1/auth/check-status
 # Headers
 {
   "Bearer": "{your access token}"

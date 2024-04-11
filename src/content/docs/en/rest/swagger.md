@@ -10,5 +10,5 @@ Swagger UI is a interactive API documentation that lets your users try out the J
 
 <p>
 Go to
-<a href="http://localhost:3000/api#/" target="_self">Swagger Docs.</a>
+<a href="https://jiujitero-api.onrender.com/api#/" target="_self">Swagger Docs.</a>
 </p>
