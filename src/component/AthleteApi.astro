@@ -1,18 +1,39 @@
 ---
 import type { Athlete } from "../models";
 const API = 'https://jiujitero-api.onrender.com/api/v1/athletes?team=Alliance';
-const response = await fetch(API);
-const data = await response.json() as Athlete[];
+
+let data: Athlete[] = [];
+let error = false;
+
+try {
+  const response = await fetch(API);
+  if (response.ok) {
+    data = await response.json() as Athlete[];
+  } else {
+    error = true;
+  }
+} catch (e) {
+  error = true;
+  console.error('Error fetching athletes:', e);
+}
 ---
 
-<div class='grid grid-5 grid-h4 not-content'>
-	{data.map((item) => (
-    <article>
-      <h3>{item.name}</h3>
-      <h3>{item.lastName}</h3>
-      <h4>{item.team}</h4>
-      <p>{item.email}</p>
-    </article>
-  ))}
-  
-</div>
+{error ? (
+  <div class="error-message">
+    <p>⚠️ Could not load athletes. The API might be starting up.</p>
+    <a href={API} target="_blank">Try opening the API directly</a>
+  </div>
+) : data.length === 0 ? (
+  <p>Loading athletes...</p>
+) : (
+  <div class='grid grid-5 grid-h4 not-content'>
+    {data.map((item) => (
+      <article>
+        <h3>{item.name}</h3>
+        <h3>{item.lastName}</h3>
+        <h4>{item.team}</h4>
+        <p>{item.email}</p>
+      </article>
+    ))}
+  </div>
+)}

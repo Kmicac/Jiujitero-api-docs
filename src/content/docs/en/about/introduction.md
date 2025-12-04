@@ -15,5 +15,6 @@ This API includes features like:
 - ✅ **Filter Athletes by Academies, name and location**
 - ✅ **Create users and check to see if they already exist**
 - ✅ **Insomnia files**
+- ✅ **GraphQL**  
+- ✅ **GraphQL Playground**  
 - ✅ **Upload Files**  `>> Working on it, coming soon...`
-- ✅ **GraphQL**       `>> Working on it, coming soon...`
