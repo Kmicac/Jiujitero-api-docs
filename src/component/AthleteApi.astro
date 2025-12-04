@@ -20,20 +20,102 @@ try {
 
 {error ? (
   <div class="error-message">
-    <p>⚠️ Could not load athletes. The API might be starting up.</p>
-    <a href={API} target="_blank">Try opening the API directly</a>
+    <p>⚠️ Could not load athletes.</p>
   </div>
 ) : data.length === 0 ? (
   <p>Loading athletes...</p>
 ) : (
-  <div class='grid grid-5 grid-h4 not-content'>
+  <div class="athletes-grid">
     {data.map((item) => (
-      <article>
-        <h3>{item.name}</h3>
-        <h3>{item.lastName}</h3>
-        <h4>{item.team}</h4>
-        <p>{item.email}</p>
+      <article class="athlete-card">
+        <div class="athlete-header">
+          <h3 class="athlete-name">{item.name} {item.lastName}</h3>
+          {item.nickname && <span class="athlete-nickname">"{item.nickname}"</span>}
+        </div>
+        <div class="athlete-info">
+          <span class="athlete-team">{item.team}</span>
+          <span class="athlete-email">{item.email}</span>
+        </div>
       </article>
     ))}
   </div>
 )}
+
+<style>
+  .athletes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .athlete-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+  }
+
+  .athlete-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .athlete-header {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 0.75rem;
+  }
+
+  .athlete-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem 0;
+    color: white;
+  }
+
+  .athlete-nickname {
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.9;
+    display: block;
+  }
+
+  .athlete-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .athlete-team {
+    font-weight: 600;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    display: inline-block;
+    width: fit-content;
+  }
+
+  .athlete-email {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    word-break: break-all;
+  }
+
+  .error-message {
+    background: #fee;
+    border: 1px solid #fcc;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #c33;
+  }
+
+  @media (max-width: 768px) {
+    .athletes-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
