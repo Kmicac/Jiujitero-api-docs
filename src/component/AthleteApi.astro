@@ -44,42 +44,41 @@ try {
 <style>
   .athletes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
     margin-top: 1rem;
   }
 
   .athlete-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: white;
+    background: var(--sl-color-bg-sidebar);
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
   }
 
   .athlete-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    border-color: var(--sl-color-text-accent);
   }
 
   .athlete-header {
-    margin-bottom: 1rem;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 0.75rem;
     padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--sl-color-gray-5);
   }
 
   .athlete-name {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 600;
     margin: 0 0 0.25rem 0;
-    color: white;
+    color: var(--sl-color-white);
   }
 
   .athlete-nickname {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-style: italic;
-    opacity: 0.9;
+    color: var(--sl-color-gray-3);
     display: block;
   }
 
@@ -90,27 +89,28 @@ try {
   }
 
   .athlete-team {
-    font-weight: 600;
-    font-size: 1rem;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--sl-color-text-accent);
+    background: var(--sl-color-gray-6);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
     display: inline-block;
     width: fit-content;
   }
 
   .athlete-email {
-    font-size: 0.85rem;
-    opacity: 0.8;
+    font-size: 0.8rem;
+    color: var(--sl-color-gray-3);
     word-break: break-all;
   }
 
   .error-message {
-    background: #fee;
-    border: 1px solid #fcc;
+    background: var(--sl-color-bg-sidebar);
+    border: 1px solid #f44;
     border-radius: 8px;
     padding: 1rem;
-    color: #c33;
+    color: #f66;
   }
 
   @media (max-width: 768px) {

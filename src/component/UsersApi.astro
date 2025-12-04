@@ -48,34 +48,32 @@ try {
 <style>
   .users-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
     margin-top: 1rem;
   }
 
   .user-card {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    border-radius: 16px;
-    padding: 2rem;
+    background: var(--sl-color-bg-sidebar);
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 8px;
+    padding: 1.25rem;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: white;
+    transition: transform 0.2s ease, border-color 0.2s ease;
   }
 
   .user-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    border-color: var(--sl-color-text-accent);
   }
 
   .user-avatar {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 1rem;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 0.75rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--sl-color-gray-5);
   }
 
   .user-avatar img {
@@ -85,16 +83,16 @@ try {
   }
 
   .user-name {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.05rem;
+    font-weight: 600;
     margin: 0 0 0.5rem 0;
-    color: white;
+    color: var(--sl-color-white);
   }
 
   .user-email {
-    font-size: 0.9rem;
-    opacity: 0.9;
-    margin: 0 0 1rem 0;
+    font-size: 0.85rem;
+    color: var(--sl-color-gray-3);
+    margin: 0 0 0.75rem 0;
     word-break: break-all;
   }
 
@@ -106,20 +104,21 @@ try {
   }
 
   .role-badge {
-    background: rgba(255, 255, 255, 0.3);
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    background: var(--sl-color-gray-6);
+    color: var(--sl-color-text-accent);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
   }
 
   .error-message {
-    background: #fee;
-    border: 1px solid #fcc;
+    background: var(--sl-color-bg-sidebar);
+    border: 1px solid #f44;
     border-radius: 8px;
     padding: 1rem;
-    color: #c33;
+    color: #f66;
   }
 
   @media (max-width: 768px) {

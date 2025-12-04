@@ -3,13 +3,6 @@ title: GraphQL Playground
 description: GraphQL Playground
 ---
 
----
-title: GraphQL Playground
-description: Interactive GraphQL Playground for testing queries and mutations
----
-
-## GraphQL Playground
-
 The GraphQL Playground is an interactive, in-browser GraphQL IDE that allows you to explore the API, test queries and mutations, and view the schema documentation.
 
 ### Access the Playground
